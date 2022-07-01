@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Index</title>
+
+</head>
+
+<body>
+
+    <div>
+
+        <h2 style="margin-left:30px;">Inserir Dados dos Alunos atráves do Excel</h2>
+        <div class="col-md-12">
+            @Html.Partial("_Menu1")
+            <br />
+        </div>
+        <form style="margin-left:30px;" class="form-group" method="post" enctype="multipart/form-data">
+
+            <div>
+
+                <input name="file" type="file" required />
+                <br />
+
+                <button  class="btn btn-danger" type="submit">Salvar Dados</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

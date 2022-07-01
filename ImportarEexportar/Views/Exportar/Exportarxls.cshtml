@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Exportarxls";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Importar Xls</title>
+
+    @Scripts.Render("~/Scripts/importxls.js")
+
+</head>
+<body>
+    <div style="color:red;">
+        <h4>@ViewBag.Mensagem</h4>
+    </div>
+    <li class="btn btn-danger" style="text-decoration:none;"><a style="color:white; text-decoration:none;" href="@Url.Action("Export","Exportar")">Voltar</a></li>
+</body>
+</html>
+
+
+

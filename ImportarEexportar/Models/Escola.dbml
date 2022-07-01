@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Escola" Class="EscolaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-77VGV2S\SQLEXPRESS;Initial Catalog=Escola;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EscolaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Alunos" Member="Alunos">
+    <Type Name="Alunos">
+      <Column Name="IdAluno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DataNascimento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NomeMae" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="NomePai" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Serie" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Turma" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sala" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

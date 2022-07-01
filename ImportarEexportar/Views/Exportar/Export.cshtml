@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Export";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Importar Xls</title>
+
+    @Scripts.Render("~/Scripts/importxls.js")
+
+</head>
+<body>
+    <div class="row">
+        <h2 style="margin-left:30px;">Exportar Dados do Aluno atráves do Excel</h2>
+        <div class="col-md-12">
+            @Html.Partial("_Menu1")
+            <br />
+        </div>
+        <div class="col-md-12">
+            <form style="margin-left:15px;" method="post" action="~/Exportar/Exportarxls">
+                <h5>
+                    Informe o Nome do Aluno:
+                </h5>
+                <input type="text" name="Nome" />
+                <button class="btn btn-danger" type="submit" name="export">Exportar Dados</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
